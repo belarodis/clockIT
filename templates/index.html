@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helpIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Horários</h1>
+        
+        <div id="calculator" class="tab-content active">
+            <h2>helpIT</h2>
+            <form id="timeForm">
+                <div class="input-group">
+                    <label for="clockIn">Horário de Entrada:</label>
+                    <input type="time" id="clockIn" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="lunchStart">Início do Almoço:</label>
+                    <input type="time" id="lunchStart" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="lunchEnd">Fim do Almoço:</label>
+                    <input type="time" id="lunchEnd" required>
+                </div>
+                
+                <button type="submit">Calcular Horário de Saída</button>
+            </form>
+            
+            <div id="calculatorResult" class="result hidden">
+                <h3>Resultado</h3>
+                <p>Você pode sair às: <span id="clockOutTime"></span></p>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
