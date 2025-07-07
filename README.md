@@ -1,7 +1,7 @@
 # ClockIT
 
 
-[➡ Acesse a Ferramenta Online Aqui ⬅](https://belarod.github.io/clockIT/)
+[➡ Acesse a Ferramenta Online Aqui ⬅](https://belarodis.github.io/clockIT/)
 
 O *ClockIT* é uma calculadora de ponto simples e direta. Foi criada para responder a uma pergunta principal: "Que horas eu posso ir embora?".
 
