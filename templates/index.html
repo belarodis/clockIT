@@ -22,27 +22,32 @@
                     </div>
                     
                     <div class="input-group">
-                        <label for="lunchStart">Início do Almoço:</label>
-                        <input type="time" id="lunchStart" required step="60" min="00:00" max="23:59">
+                        <label for="intervalStart">Início do Intervalo:</label>
+                        <input type="time" id="intervalStart" required step="60" min="00:00" max="23:59">
                     </div>
                     
                     <div class="input-group">
-                        <label for="lunchEnd">Fim do Almoço:</label>
-                        <input type="time" id="lunchEnd" required step="60" min="00:00" max="23:59">
+                        <label for="intervalEnd">Fim do Intervalo:</label>
+                        <input type="time" id="intervalEnd" required step="60" min="00:00" max="23:59">
                     </div>
                     
                     <button type="submit">Calcular Horário de Saída</button>
                 </form>
-                
-                <div id="calculatorResult" class="result hidden">
-                    <h3>Resultado</h3>
-                    <p>Horário de saída: <span id="clockOutTime" class="highlight"></span></p>
-                    <p>Total de horas trabalhadas: <span id="totalHours" class="highlight"></span></p>
-                </div>
             </div>
         </main>
     </div>
     
     <script src="script.js"></script>
+
+    <div id="resultModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <h3>Resultado</h3>
+            <p>Horário de saída: <span id="clockOutTime" class="highlight"></span></p>
+            <p>Total de horas trabalhadas: <span id="totalHours" class="highlight"></span></p>
+        </div>
+    </div>
+
+
 </body>
 </html>
