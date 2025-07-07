@@ -137,9 +137,21 @@ h3 {
   gap: 1.8rem;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); /* Exemplo: ícone branco */
-  cursor: pointer;
+input[type="text"] {
+  padding: 0.85rem 1rem;
+  background-color: rgba(10, 14, 23, 0.5);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  color: var(--text-color);
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--glow-effect);
+  background-color: rgba(0, 217, 255, 0.05);
 }
 
 
