@@ -349,7 +349,6 @@ button:active {
   margin-top: 1rem;
 }
 
-
 .reportPageButton:hover::after {
   content: 'Em desenvolvimento';
   position: absolute;
@@ -374,7 +373,6 @@ button:active {
   animation: pulse 1.5s infinite ease-in-out;
 }
 
-/* Responsividade Tech */
 @media (max-width: 768px) {
   .container {
     padding: 1.8rem;

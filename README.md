@@ -2,8 +2,6 @@
 
 [➡ Acesse a Ferramenta Online Aqui ⬅](https://belarodis.github.io/clockIT/)
 
-[➡ Acesse a Ferramenta Online Aqui ⬅](https://belarodis.github.io/clockIT/)
-
 O *ClockIT* é uma calculadora de ponto simples e direta. Foi criada para responder a uma pergunta principal: "Que horas eu posso ir embora?".
 
 A ferramenta calcula o horário exato de saída para completar uma jornada de *6 horas de trabalho*, considerando seu horário de entrada e suas pausas. Sem login, sem configurações, sem complicações. Apenas a informação que você precisa.
