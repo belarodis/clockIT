@@ -1,4 +1,3 @@
-/* Reset e Variáveis Globais */
 :root {
   --primary-color: #00d9ff;
   --secondary-color: #0084ff;
@@ -35,7 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Efeito de partículas (opcional - pode ser implementado com JS depois) */
 body::before {
   content: '';
   position: fixed;
@@ -50,14 +48,13 @@ body::before {
   z-index: -1;
 }
 
-/* Container Principal */
 .container {
   width: 100%;
   max-width: 600px;
   background: linear-gradient(145deg, var(--card-bg) 0%, #0d1422 100%);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-tech);
-  padding: 2.5rem;
+  padding: 2rem;
   border: 1px solid rgba(0, 217, 255, 0.1);
   position: relative;
   overflow: hidden;
@@ -82,7 +79,6 @@ body::before {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Títulos */
 h1 {
   color: var(--primary-color);
   text-align: center;
@@ -130,7 +126,6 @@ h3 {
   font-weight: 500;
 }
 
-/* Formulário */
 #timeForm {
   display: flex;
   flex-direction: column;
@@ -153,7 +148,6 @@ input[type="text"]:focus {
   box-shadow: var(--glow-effect);
   background-color: rgba(0, 217, 255, 0.05);
 }
-
 
 .input-group {
   display: flex;
@@ -185,7 +179,6 @@ input[type="time"]:focus {
   background-color: rgba(0, 217, 255, 0.05);
 }
 
-/* Botão Tech */
 button {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: #000;
@@ -205,7 +198,7 @@ button {
   box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
 }
 
-button::before {
+button:not(.reportPageButton)::before {
   content: '';
   position: absolute;
   top: 0;
@@ -217,21 +210,21 @@ button::before {
   z-index: -1;
 }
 
-button:hover {
+button:not(.reportPageButton):hover::before {
+  left: 0;
+}
+
+
+button:not(.reportPageButton):hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 217, 255, 0.4);
   color: #fff;
-}
-
-button:hover::before {
-  left: 0;
 }
 
 button:active {
   transform: translateY(0);
 }
 
-/* Resultado Tech */
 .result {
   margin-top: 2.5rem;
   padding: 1.8rem;
@@ -283,7 +276,6 @@ button:active {
   justify-content: center;
   z-index: 9999;
 }
-
 
 .modal-content {
   background: linear-gradient(145deg, var(--card-bg) 0%, #0d1422 100%);
@@ -340,8 +332,38 @@ button:active {
   text-shadow: var(--glow-effect);
 }
 
+.reportPageButton {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  opacity: 0.6;
+  position: relative;
+  margin: auto; 
+  margin-top: 1rem;
+}
 
-/* Efeitos de loading (pode ser usado com JS) */
+
+.reportPageButton:hover::after {
+  content: 'Em desenvolvimento';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 @keyframes pulse {
   0% { opacity: 0.6; }
   50% { opacity: 1; }
