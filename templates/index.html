@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>helpIT - Gestor de Horários</title>
+    <title>clockIT - Gestor de Horários</title>
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Gestor de Horários</h1>
-            <h2>helpIT</h2>
+            <h2>clockIT</h2>
         </header>
         
         <main>
@@ -18,17 +18,17 @@
                 <form id="timeForm">
                     <div class="input-group">
                         <label for="clockIn">Horário de Entrada:</label>
-                        <input type="time" id="clockIn" required step="60" min="00:00" max="23:59">
+                        <input type="text" id="clockIn" required step="60" min="00:00" max="23:59">
                     </div>
                     
                     <div class="input-group">
                         <label for="intervalStart">Início do Intervalo:</label>
-                        <input type="time" id="intervalStart" required step="60" min="00:00" max="23:59">
+                        <input type="text" id="intervalStart" required step="60" min="00:00" max="23:59">
                     </div>
                     
                     <div class="input-group">
                         <label for="intervalEnd">Fim do Intervalo:</label>
-                        <input type="time" id="intervalEnd" required step="60" min="00:00" max="23:59">
+                        <input type="text" id="intervalEnd" required step="60" min="00:00" max="23:59">
                     </div>
                     
                     <button type="submit">Calcular Horário de Saída</button>
